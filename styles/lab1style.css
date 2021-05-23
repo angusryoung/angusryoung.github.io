@@ -1,0 +1,69 @@
+/* Style sheet
+   
+*/
+
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+html {
+  background-color: white;
+}
+
+body {
+  background-color: rgb(240, 240, 245);
+  width: 600px;
+  border: 2px solid black;
+  padding: 0px 20px 20px 20px;
+}
+center {
+  text-align: center;
+}
+
+a:link {
+  color: #ff0800;
+}
+a:visited {
+  color: #ff0800;
+}
+a:active {
+  color: #ff0800;
+}
+
+h2 {
+  color: #ff0800; /* Fuchsia */
+  font-family: Monaco;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  align: center;
+}
+
+p {
+  color: rgb(66, 43, 43);
+  font-family: Monaco;
+}
+
+/* Defining styling for a specific element type - each question */
+
+.block {
+  display: block;
+  width: 75%;
+  border: none;
+  color: white;
+  background-color: #ff0800; /* red */
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}
+
+/* Defining styling for a specific element with an id */
+#signature {
+  text-align: right;
+  color: red;
+  font-style: italic;
+  font-size: 75%;
+}

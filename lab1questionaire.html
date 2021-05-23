@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset= "utf-8">
+    <link href = "styles/lab1style.css" rel="stylesheet" type="text/css">
+
+    <title>Questionaire</title>
+  </head>
+
+
+  <body>
+    <form action="index.php" name="my form" method="POST">
+
+        <h2>What do you think of the UI in this <a href="https://www.thesource.ca">The Source</a> site?</h2>	
+        <br><br>
+        <img src = "images/TheSource.JPG" alt= "http://thesource.ca/en-ca" width="450" height="300">
+        <br><br>
+        <p>
+        <strong>First name:</strong> <input type="text" name ="firstname"><br><br>
+        <strong>Last name:</strong> <input type="text" name ="lastname"><br><br>
+        <label><strong>Email:</strong>
+            <input type = "email" placeholder = "JohnDoe@domain.com"
+            required /> 
+        </label>
+        </p>
+        <p>
+            <label for="age"><strong>How old are you:</strong></label>
+            <select name="age" id="age">
+            <option value="age1">20 or younger</option>
+            <option value="age2">21 - 30</option>
+            <option value="age3">31 - 40</option>
+            <option value="age4">41-50</option>
+            <option value="age4">51-60</option>
+            <option value="age4">60 or older</option>
+            </select>
+        </p>
+
+        <p>
+        <strong>What is your favourite phone brand?</strong><br>
+            <input type = "radio" id="samsung" name = "brand" value = "samsung">
+            <label for = "samsung">Samsung</label><br>
+            <input type = "radio" id="apple" name = "brand" value = "apple">
+            <label for = "apple">Apple</label><br>
+            <input type = "radio" id="pixel" name = "brand" value = "pixel">
+            <label for = "pixel">Pixel</label><br>
+            <input type = "radio" id="xiaomi" name = "brand" value = "xiaomi">
+            <label for = "xiaomi">Xiaomi</label><br>
+
+        </p>
+
+        <p>
+            <strong>Which devices do you own?</strong> <br>
+            <input type="checkbox" id="laptop" name="device1" value="laptop">
+            <label for="laptop"> Laptop</label><br>
+            <input type="checkbox" id="phone" name="device2" value="phone">
+            <label for="phone"> Phone</label><br>
+            <input type="checkbox" id="tablet" name="device3" value="tablet">
+            <label for="tablet"> Tablet</label><br>
+            <input type="checkbox" id="watch" name="device4" value="watch">
+            <label for="watch"> Smart watch</label><br>
+            <input type="checkbox" id="headphone" name="device5" value="headphone">
+            <label for="headphone"> Wireless Headphone</label><br>
+        </p>
+
+        <p><label> <strong>Any comments about The Source's customer service? </strong></label> <br>
+            <textarea name = "comments"
+            rows = "5" cols = "35">Enter additional comments here.</textarea>
+        </p>
+        <br><br><br>
+
+        <button id="submitButton" type="button" class="block">
+            SUBMIT your questionnaire
+        </button>
+        <br><br>
+
+        <footer>
+            <p id = "signature">Website designed by Mr Goose</p>
+        </footer>        
+    </form>
+  </body>
+</html>
+
+
+<!--A title (<title> tag)
+• A link to the website of your choice (where the UI to be evaluated is)
+• An image of the website you are evaluating which also serves as a link to the website.
+• A form (<form> tag) containing at least 5 questions using the following types listed below:
+• A text type question (e.g. user must type in the answer)check
+• A single choice question (radio button) check
+• A single choice question (single selection list)
+• A multi-selection type question (several boxes can be selected)
+• A place to write comments.
+• A button to submit the questionnaire.
+• Your signature (Website designed by ...) at the bottom of the page also known as a footer. It
+does not need to be your real name… take an artist name!
+• The use of divisions (<div> tag with associated CSS style) to make the questions uniform.
+• Using external CSS (separate file) to define styles for titles, divisions, your signature at the
+bottom of the page, etc. Explore styling for fonts, colors, alignments, etc-->
