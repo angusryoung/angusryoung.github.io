@@ -29,6 +29,10 @@ a:visited {
 a:active {
   color: #ff0800;
 }
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
 
 h2 {
   color: #ff0800; /* Fuchsia */
