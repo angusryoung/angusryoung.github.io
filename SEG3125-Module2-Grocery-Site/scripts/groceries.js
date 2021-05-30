@@ -19,6 +19,48 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
+	},
+	{
+		name: "yogurt",
+		vegetarian: false,
+		glutenFree: true,
+		price: 10.00
+	},
+    {
+		name: "almond granola",
+		vegetarian: true,
+		glutenFree: false,
+		price: 4.00
+	},
+	{
+		name: "pecan pie",
+		vegetarian: false,
+		glutenFree: true,
+		price: 10.00
+	},
+    {
+		name: "cheese sticks",
+		vegetarian: true,
+		glutenFree: false,
+		price: 4.00
+	},
+	{
+		name: "chocolate covered nuts",
+		vegetarian: false,
+		glutenFree: true,
+		price: 10.00
+	},
+    {
+		name: "granola cereal",
+		vegetarian: true,
+		glutenFree: false,
+		price: 4.00
+	},
+	{
+		name: "sesame oil",
+		vegetarian: true,
+		glutenFree: false,
+		price: 6.90
 	}
 ];
 	
