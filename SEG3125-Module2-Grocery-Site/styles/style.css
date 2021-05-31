@@ -1,12 +1,12 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
 body {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   width: 600px;
   padding: 0px 20px 20px 20px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 18px;
   font-family: Helvetica, sans-serif;
 }
