@@ -19,13 +19,19 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
+<!--	Choose a Category:
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
+	<option value="Vegetarian">Lactose Free</option>
+    <option value="GlutenFree">Nut Free</option>
     <option value="None">None</option>
-	</select>
+	</select>-->
+  <p>Choose a Category?</p>
+  <input type="checkbox" id="LactoseFreePicked" name="vehicle1" value="Vegetarian" onchange=" populateListProductChoices('displayProduct') "> <label for="vehicle1"> Lactose Free</label><br>
+  <input type="checkbox" id="NutFreePicked" name="vehicle2" value="GlutenFree" onchange = "populateListProductChoices('displayProduct')">  <label for="vehicle2" > Nut Free</label><br>
+  <input type="checkbox" id="OrganicPicked" name="vehicle3" value="Organic" onchange = "populateListProductChoices('displayProduct')" >  <label for="vehicle3"> organic</label><br><br>
+
+
 </div>
 
 <div id="Products" class="tabcontent">
