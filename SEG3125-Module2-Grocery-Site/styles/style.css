@@ -46,3 +46,10 @@ body {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+#signature {
+  text-align: right;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  font-size: 75%;
+}
