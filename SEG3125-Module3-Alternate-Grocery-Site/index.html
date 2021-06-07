@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+    <! I also used the started code from the teacher>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products') ;  populateListProductChoices('displayProduct'); " >Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+<!--	Choose a Category:
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetarian">Lactose Free</option>
+    <option value="GlutenFree">Nut Free</option>
+    <option value="None">None</option>
+	</select>-->
+  <p>Choose a Category?</p>
+  <input type="checkbox" id="LactoseFreePicked" name="vehicle1" value="Vegetarian" onchange=" populateListProductChoices('displayProduct') "> <label for="vehicle1"> Lactose Free</label><br>
+  <input type="checkbox" id="NutFreePicked" name="vehicle2" value="GlutenFree" onchange = "populateListProductChoices('displayProduct')">  <label for="vehicle2" > Nut Free</label><br>
+  <input type="checkbox" id="OrganicPicked" name="vehicle3" value="Organic" onchange = "populateListProductChoices('displayProduct')" >  <label for="vehicle3"> organic</label><br><br>
+
+
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+   <br>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+
+<footer>
+  <p id = "signature">Website designed by Mr Goose</p>
+</footer>  
+
+</body>
+</html>
