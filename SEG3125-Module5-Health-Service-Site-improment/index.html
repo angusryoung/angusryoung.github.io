@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <title>Module 5 Lab</title>
+  </head>
+  <body>
+    <!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+
+    <!--
+    <nav class="navbar bg-secondary text-dark p-3 my-3 ">
+        <h1><img src="images\cat_petting_dog.png" width="170" height="130" >    Welcome to my Physiotherapy Clinic</h1>
+    </nav>-->
+
+    <br />
+
+    <div class="container-lg">
+      <nav class="navbar navbar-light border bg-light">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand">Navbar</a>-->
+          <a href="#" IMG class="brandImage"
+            ><img src="images\cat_petting_dog.png" width="130" height="90"
+          /></a>
+          <form class="d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="goAbout"
+                ><img src="https://img.icons8.com/ios/25/000000/about.png" />
+                &nbsp; About&nbsp;
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="goServ">
+                <img
+                  src="https://img.icons8.com/ios/25/000000/doctor-giving-advice.png"
+                />
+                Services</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="goTeam">
+                <img
+                  src="https://img.icons8.com/material-outlined/25/000000/stethoscope.png"
+                />
+                Team</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="goAppoint"
+                ><img
+                  src="https://img.icons8.com/ios/25/000000/open-book.png"
+                />
+                Book Appointment</a
+              >
+            </li>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="jumbotron1 text-center">
+      <br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <h1><strong>Welcome to Ottawa Animal Hospital</strong></h1>
+      <p>Ottawa's leading animal care facility</p>
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+    </div>
+
+    <div class="jumbotron2 text-center">
+      <br /><br />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/worldwide-location--v1.png"
+            /><br /><br />
+            <h4><strong>Our Address</strong></h4>
+
+            <p>
+              75 Laurier Ave. E, <br />
+              Ottawa, Ontario <br />
+              K1N 6N5
+            </p>
+          </div>
+          <div class="col-sm">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/add-contact-to-company.png"
+            /><br /><br />
+            <h4><strong>Contact Us</strong></h4>
+            <p>
+              OttawaAnimalHospital@gmail.com<br />
+              Phone: 1 (905) 793-5811<br />
+              Fax: 1 (905) 793-2021
+            </p>
+          </div>
+          <div class="col-sm">
+            <img
+              src="https://img.icons8.com/ios-glyphs/60/000000/overtime.png"
+            /><br /><br />
+            <h4><strong>Hospital Hours</strong></h4>
+            <p>
+              Monday - Friday: 8am - 4pm<br />
+              Saturday - Sundary: 10am - 2pm
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <div class="container-lg">
+      <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+      <!--
+    <style>
+        span {
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          margin: 6px;
+          background-color: #555;
+        }
+        </style>
+    <span class="rounded-circle"></span>-->
+
+      <div id="about" class="p-3 my-3 border bg-light">
+        <h1>
+          <strong>
+            <img src="https://img.icons8.com/ios/50/000000/about.png" /> About
+            us</strong
+          >
+        </h1>
+        <p class="p-4 my-3" style="font-size: 25px">
+          <strong> Compassionate veterinary care for your beloved pets</strong
+          ><br />
+          At Ottawa Animal Hospital we seek to provide quality health care to
+          your furry companions. We serve dogs and cats as well as other exotic
+          companion animals by providing calming stress-free care service for
+          pets and owners.
+        </p>
+
+        <p style="font-size: 25px; padding-left: 1.5rem">
+          <strong>Here at Ottawa Animal Clinic your pets are our family</strong>
+        </p>
+      </div>
+
+      <br />
+      <br />
+      <div id="services">
+        <h1>
+          <img
+            src="https://img.icons8.com/ios/50/000000/doctor-giving-advice.png"
+          />
+          Our Services
+        </h1>
+      </div>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              General Medicine
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Routine Check-up: 20$ <br />
+              Staff is capable of treating and diagnosing various pet needs. It
+              is recommended that your pet have a Checkup biannually.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Grooming
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Hair Cuts and Manicure: 15$<br />
+              Get your pet groomed and manicured by seasoned professionals.
+              Extra care is taken to creating a calming experience for the dog.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Reproductive Health Services
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Spading Procedure: 100$<br />
+              Eliminate your pet's ability to reproduce. Prevents it from going
+              to horny jail. Bonk!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Animal Physiotherapy
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Massage Therapy: 50$ <br />
+              Give your pet a the massage it deserves after a busy day.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Emergency and Urgent Care
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Prices may vary <br />
+              Provides a fast response to your pets critical care needs.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+      <br /><br />
+      <div class="p-3 my-3 border bg-light" id="team">
+        <h1>
+          <img
+            src="https://img.icons8.com/material-outlined/48/000000/stethoscope.png"
+          />
+          Meet the Team
+        </h1>
+        <div class="row justify-content-around">
+          <div class="card" style="width: 25rem">
+            <br />
+            <img src="images/docter2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Dr. Green Cabbage completed his B.Sc.H. degree in Cat related
+                Sciences in 2000 at the University of CatLand. He provides
+                reproduce health services.
+                <br /><br /><br /><br /><br />
+                Monday to Wenesday 8am - 4pm
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem">
+            <br />
+            <img src="images/doctor3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Dr. Dingus McBingus graduated from the from Waterloo College in
+                2001. Due to a birth defect she has the ability to
+                telepathically communicate with animals allowing her understand
+                what pets may need.
+                <br /><br /><br />
+                Thursday to Fridays 8am - 4pm
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem">
+            <br />
+            <img src="images/doctor4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Dr. Ligma Sugma graduated from the Ye Old School of Farmacology
+                in 1904 and is the head Doctor at the Ottawa Animal Hospital. He
+                is a farm animal specialist and deals primarily with cows. He is
+                thought to be immortal.
+                <br /><br /><br />
+                Saturday to Sunday 10am - 2pm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+      <br />
+      <div id="appointment">
+        <h1>
+          <img src="https://img.icons8.com/ios/50/000000/open-book.png" /> Book
+          an appointment
+        </h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <br style="line-height: 100px" />
+          <p>
+            Email Address
+            <br /><br />
+
+            First Name
+            <br /><br />
+
+            Last Name
+            <br /><br />
+            Phone Number<br />
+            <br />
+            Doctor<br /><br />
+            Select Service<br /><br />
+            Select Time and Date<br /><br />
+            Credit Card information
+          </p>
+        </div>
+        <div class="col-sm-10">
+          <br />
+          <form id="form">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="johndoe@example.com"
+              />
+              <br />
+
+              <input
+                type="text"
+                class="form-control"
+                id="firstname"
+                placeholder="John"
+              /><br />
+
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                placeholder="Doe"
+              /><br />
+
+              <input
+                class="form-control"
+                id="phone"
+                placeholder="123-456-6789"
+              /><br />
+
+              <select class="form-control" id="doctor">
+                <option>Dr. Green Cabbage</option>
+                <option>Dr. Dingus McBingus</option>
+                <option>Dr. Ligma Sugma</option>
+              </select>
+              <br />
+
+              <input class="form-control" type="text" id="dateInput" />
+              <br />
+
+              <select class="form-control" id="service">
+                <option>Routine Check-up</option>
+                <option>Hair Cuts and Manicure</option>
+                <option>Spading Procedure</option>
+                <option>Massage Therapy</option>
+                <option>Emergency and Urgent Care</option>
+              </select>
+
+              <br />
+              <input
+                class="form-control"
+                type="text"
+                id="debit"
+                placeholder="1234-4567-8910-1112"
+                title="We ask for your credit card number in case of no-show, 20$ will be charged."
+              />
+            </div>
+
+            <br />
+          </form>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Additional information</label>
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+      <br />
+      <button type="button" id="submitBtn" class="btn btn-warning" disabled>
+        Submit appointment
+      </button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="receipt">Some text in the Modal..</p>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("submitBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        bookAppointment();
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- here we input our javascript helper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
+
+    <!-- from starter code-->
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#goAbout").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#about").offset().top,
+            },
+            100
+          );
+        });
+      });
+      $(document).ready(function () {
+        $("#goServ").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#services").offset().top,
+            },
+            100
+          );
+        });
+      });
+
+      $(document).ready(function () {
+        $("#goTeam").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#team").offset().top,
+            },
+            100
+          );
+        });
+      });
+
+      $(document).ready(function () {
+        $("#goAppoint").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#appointment").offset().top,
+            },
+            100
+          );
+        });
+      });
+
+      //from the starter code
+
+      $("#debit").on("mouseenter", function () {
+        $("#debit").addClass("showInput");
+      });
+
+      $("#debit").on("mouseleave", function () {
+        $("#debit").removeClass("showInput");
+      });
+
+      var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
+      const setDateFormat = "mm/dd/yy";
+
+      function disableDates(date) {
+        var sVet = $("#doctor").children("option:selected").val();
+        if (sVet == "Dr. Green Cabbage") {
+          if (date.getDay() == 3 || date.getDay() == 1 || date.getDay() == 2)
+            return [false];
+        } else if (sVet == "Dr. Dingus McBingus") {
+          if (date.getDay() === 5 || date.getDay() === 4) return [false];
+        } else {
+          if (date.getDay() === 0 || date.getDay() === 6) return [false];
+        }
+        // Sunday is Day 0, disable all Sundays
+
+        var string = jQuery.datepicker.formatDate(setDateFormat, date);
+        return [unavailableDates.indexOf(string) === -1];
+      }
+
+      //base on code from https://www.learningjquery.com/2012/05/validate-phone-numbers-using-jquery
+      function validatePhone(txtPhone) {
+        var a = document.getElementById(txtPhone).value;
+        var filter = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (filter.test(a)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      //filter is based on code from https://html5-tutorial.net/form-validation/validating-email/
+      function validateEmail(txtEmail) {
+        var a = document.getElementById(txtEmail).value;
+        var filter =
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (filter.test(a)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function validateDebit(txtEmail) {
+        var a = document.getElementById(txtEmail).value;
+        var filter =
+          /^\(?([0-9]{4})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+        if (filter.test(a)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function bookAppointment() {
+        //when the confirm appointment button is pressed
+
+        var date = $("#dateInput").datepicker("getDate");
+        var d = ("0" + date.getDate()).slice(-2);
+        var m = ("0" + (date.getMonth() + 1)).slice(-2);
+        var y = date.getFullYear();
+
+        var sService = $("#service").children("option:selected").val();
+        var sVet = $("#doctor").children("option:selected").val();
+
+        var name = $("#firstname").val() + " " + $("#lastname").val();
+        var em = $("#email").val();
+        var p = $("#phone").val();
+        var cc = $("#debit").val();
+
+        document.getElementById("receipt").innerHTML =
+          "Name: " +
+          name +
+          "<br>Email: " +
+          em +
+          "<br>Phone Number: " +
+          p +
+          "<br>Credit Card: " +
+          cc +
+          "<br>Date: " +
+          m +
+          "/" +
+          d +
+          "/" +
+          y +
+          "<br>" +
+          "Service: " +
+          sService +
+          "<br>" +
+          "Veterinarian: " +
+          sVet;
+      }
+
+      // HERE, JQuery "LISTENING" starts
+      $(document).ready(function () {
+        // phone validation, it calls validatePhone
+        // and also some feedback as an Alert + putting a value in the input that shows the format required
+        // the "addClass" will use the class "error" defined in style.css and add it to the phone input
+        // The "error" class in style.css defines yellow background and red foreground
+        $("#phone").on("change", function () {
+          if (!validatePhone("phone")) {
+            alert("Wrong format for phone");
+            $("#phone").val("");
+            $("#phone").addClass("error");
+            $("#submitbtn").prop("disabled", true);
+          } else {
+            $("#phone").removeClass("error");
+          }
+        });
+
+        $("#email").on("change", function () {
+          if (!validateEmail("email")) {
+            alert("Wrong format for email");
+            $("#email").val("");
+            $("#email").addClass("error");
+            $("#submitbtn").prop("disabled", true);
+          } else {
+            $("#email").removeClass("error");
+          }
+        });
+
+        $("#debit").on("change", function () {
+          if (!validateDebit("debit")) {
+            alert("Wrong format for debit");
+            $("#debit").val("");
+            $("#debit").addClass("error");
+            $("#submitbtn").prop("disabled", true);
+          } else {
+            $("#debit").removeClass("error");
+          }
+        });
+
+        const form = document.getElementById("form");
+        form.addEventListener("change", () => {
+          if (
+            $("#firstname").val() != "" &&
+            $("#lastname").val() != "" &&
+            $("#phone").val() != "" &&
+            $("#debit").val() != "" &&
+            $("#dateInput").datepicker("getDate") != null &&
+            $("#email").val() != null
+          ) {
+            document.getElementById("submitBtn").disabled = false;
+          } else {
+            document.getElementById("submitBtn").disabled = true;
+          }
+        });
+
+        $("#dateInput").datepicker({
+          dateFormat: setDateFormat,
+          minDate: new Date("06/01/2020"),
+          maxDate: "+4M",
+          beforeShowDay: $.datepicker.noWeekends,
+          beforeShowDay: disableDates,
+        });
+
+        // Look at the different events on which an action can be performed
+        // https://www.w3schools.com/jquery/jquery_events.asp
+        // Here, we put
+        $("#debit").on("mouseenter", function () {
+          $("#debit").addClass("showInput");
+        });
+
+        $("#debit").on("mouseleave", function () {
+          $("#debit").removeClass("showInput");
+        });
+
+        // https://jqueryui.com/tooltip/
+        // The class "highlight" used here is predefined in JQuery UI
+        // the message of the tooltip is encoded in the input (in the HTML file)
+        $("#debit").tooltip({
+          classes: {
+            "ui-tooltip": "highlight",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
