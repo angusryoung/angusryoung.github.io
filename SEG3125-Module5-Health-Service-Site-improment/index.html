@@ -397,8 +397,8 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             Phone Number<br />
             <br />
             Doctor<br /><br />
+            Select Date<br /><br />
             Select Service<br /><br />
-            Select Time and Date<br /><br />
             Credit Card information
           </p>
         </div>
@@ -659,6 +659,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         var cc = $("#debit").val();
 
         document.getElementById("receipt").innerHTML =
+          "Here is your appointment information: <br>" +
           "Name: " +
           name +
           "<br>Email: " +
